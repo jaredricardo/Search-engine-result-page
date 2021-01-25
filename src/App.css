@@ -1,0 +1,252 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.header {
+    margin: 20px 0px;
+}
+
+.info-container {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+.result-box {
+    margin: 8px;
+}
+
+.test{
+    margin: 5px;
+}
+
+.featured {
+    box-shadow: 0px 1px 3px rgb(27, 189, 49) inset, 0px 0px 8px rgb(27, 189, 49);
+}
+
+.thumbnail-wrapper {
+    transition: .5s ease;
+}
+
+.thumbnail {
+    height: auto;
+    width: 100%;
+    /* display: block; */
+    transition: .5s ease;
+    opacity: 1;
+}
+
+
+a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.sort-options {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    
+}
+
+.searched {
+    float: left;
+}
+
+.search-box {
+    float: right;
+}
+
+
+.filter-show {
+    float: right;
+    display: none;
+}
+
+#sort-menu {
+    height: 30px;
+    width: 150px;
+}
+
+.filter-options h4 {
+    margin-bottom: 20px;
+}
+
+.filter-options h6{
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 2px;
+    color: gray;
+}
+
+.filter-radio:hover {
+    color:red;
+}
+
+.filter-options ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+.sidebar {
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* VIDEO CARD HOVER */
+
+.detail-container {
+    width: 100%;
+    height: 10%;
+    transition: .5s ease;
+    opacity: 0;
+    bottom: 54px;
+    position: absolute;
+}
+
+.video-title {
+    opacity: .80;
+    font-size: 18px;
+    font: bold;
+}
+
+.user-link {
+    opacity: .6;
+    font-size: 13px;
+}
+
+.video-title:hover {
+    opacity: 1;
+}
+
+.user-link:hover {
+    opacity: .9;
+}
+
+.thumbnail-wrapper:hover .detail-container{
+    opacity: .8;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6629026610644257) 0%, rgba(255,255,255,0) 61%);
+}
+
+/* VIDEO CARD DETAIL CSS */
+
+.hover-details {
+    border-right: 16px solid white;
+    position: absolute; 
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.ago {
+    margin-left: 2%;
+    display: inline-block;
+}
+
+.plays {
+    margin-right: 2%;
+    height: 100%;
+    display: inline-block;
+}
+
+.comments {
+    margin-left: 2%;
+    height: 100%;
+    display: inline-block;
+}
+
+.duration {
+    margin: 1%;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+    /* MEDIA QUERIES */
+
+@media screen and (max-width: 530px) {
+    .search-box input {
+        width: 85px !important;
+    }
+    .search-box button {
+        margin: 3px;
+        padding: 0.15em .15em;
+    }
+    .searched {
+        max-width: 50%;
+        margin-top: 8px;
+    }
+    .searched h5 {
+        font-size: 15px !important;
+    }
+    .search-box {
+        float: center;
+    }
+    .small-no-padding {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-change {
+        padding: 10px 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50% !important;
+        border: 2px dotted black;
+        height: 500px;
+        background-color: white !important;
+        z-index: 1;
+    }
+    .filter-show {
+       display: inline-block;
+    }
+
+    #sort-menu {
+        width: 100px !important;
+        float:left;
+    }
+    .search-box input {
+        width: 120px;
+    }
+    .searched h5{
+        font-size: 20px;
+    }
+    .sort-options h4 {
+        float:left;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+      .sidebar {
+          display: none;
+      }
+      .collapse-button {
+          display: none;
+      }
+      .hide {
+          display: inline-block;
+      }
+  }

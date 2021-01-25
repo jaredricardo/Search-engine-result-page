@@ -1,0 +1,8 @@
+{
+  "short_name": "SERP",
+  "name": "Vimeo - Jared Ricardo SERP",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
